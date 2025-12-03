@@ -66,7 +66,7 @@ void Flash_Test(void)
     uint8_t tx[16] = "HelloFlash";
     uint8_t rx[16] = {0};
 
-    // erase 4KB
+// erase 4KB --If you want to see the formatted signal, do not erase 4K
     W25Q01_SectorErase4K(0);
 
     // write in 16 Byte
